@@ -47,25 +47,6 @@ class Fire extends StatelessWidget {
                 bottom: MediaQuery.of(context).size.height / 2 - 350,
                 left: MediaQuery.of(context).size.width / 2 - 150,
                 child: FireWidget(check: true, size: true,)),
-            Positioned(
-                bottom: MediaQuery.of(context).size.height / 2 - 370,
-                left: MediaQuery.of(context).size.width / 2 - 60.5,
-                child: Container(
-                  padding: EdgeInsets.all(8),
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      color: Color.fromRGBO(217, 217, 217, 100)),
-                  child: const Row(children: [
-                    Icon(Icons.camera_enhance),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "view in 3D",
-                      style: TextStyle(fontSize: 15),
-                    )
-                  ]),
-                ))
           ],
         ),
       ),

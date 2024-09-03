@@ -46,7 +46,7 @@ class Water extends StatelessWidget {
             Positioned(
                 bottom: MediaQuery.of(context).size.height / 2 - 350,
                 left: MediaQuery.of(context).size.width / 2 - 150,
-                child: WaterWidget(check: false, size: true,)),
+                child: WaterWidget(check: true, size: true,)),
           ],
         ),
       ),
