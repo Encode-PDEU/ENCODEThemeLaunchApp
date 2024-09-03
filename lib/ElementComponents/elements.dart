@@ -87,13 +87,13 @@ class WaterWidget extends StatelessWidget {
 }
 
 class FireWidget extends StatelessWidget {
-  const FireWidget({super.key});
+  bool check;
+  bool size;
+  FireWidget({super.key, required this.check, required this.size});
 
   @override
   Widget build(BuildContext context) {
-    return buildIconContainer(
-      const AssetImage('assets/images/fire.jpg'),
-    );
+    return buildModelContainer("assets/models/fire_model.glb",check,size);
   }
 }
 

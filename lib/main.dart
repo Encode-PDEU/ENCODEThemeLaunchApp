@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
             ),
             // Elementrix Text
             Positioned(
-              top: MediaQuery.of(context).size.height / 2 - 120,
+              top: MediaQuery.of(context).size.height / 2 - 150,
               left: MediaQuery.of(context).size.width / 2 - 155.5,
               child: const SizedBox(
                 child: Text(
@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
             ),
             // Earth Element (Tap to Navigate)
             Positioned(
-              top: MediaQuery.of(context).size.height / 2 - 10,
+              top: MediaQuery.of(context).size.height / 2 - 0,
               left: MediaQuery.of(context).size.width / 2 - 170.5,
               child: Builder(
                 builder: (context) {
@@ -89,7 +89,7 @@ class MyApp extends StatelessWidget {
             ),
             // Air Element
             Positioned(
-              top: MediaQuery.of(context).size.height / 2 - 10,
+              top: MediaQuery.of(context).size.height / 2 - 0,
               right: MediaQuery.of(context).size.width / 2 - 170.5,
               child: Builder(
                 builder: (context) {
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
             ),
             // Ether Element
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 2 - 265,
+              bottom: MediaQuery.of(context).size.height / 2 - 230,
               right: MediaQuery.of(context).size.width / 2 - 65.5,
               child: Builder(
                 builder: (context) {
@@ -123,7 +123,7 @@ class MyApp extends StatelessWidget {
             ),
             // Water Element
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 2 - 420,
+              bottom: MediaQuery.of(context).size.height / 2 - 350,
               right: MediaQuery.of(context).size.width / 2 - 170.5,
               child: Builder(
                 builder: (context) {
@@ -140,7 +140,7 @@ class MyApp extends StatelessWidget {
             ),
             // Fire Element
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 2 - 420,
+              bottom: MediaQuery.of(context).size.height / 2 - 350,
               left: MediaQuery.of(context).size.width / 2 - 170.5,
               child: Builder(
                 builder: (context) {
@@ -150,7 +150,7 @@ class MyApp extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => const Fire()),
                       );
                     },
-                    child: const FireWidget(),
+                    child: FireWidget(check: false,size: false,),
                   );
                 },
               ),

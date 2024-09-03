@@ -44,9 +44,9 @@ class Fire extends StatelessWidget {
             ),
             // Overlaying Bottom Container (White)
             Positioned(
-                bottom: MediaQuery.of(context).size.height / 2 - 300,
-                left: MediaQuery.of(context).size.width / 2 - 60.5,
-                child: FireWidget()),
+                bottom: MediaQuery.of(context).size.height / 2 - 350,
+                left: MediaQuery.of(context).size.width / 2 - 150,
+                child: FireWidget(check: true, size: true,)),
             Positioned(
                 bottom: MediaQuery.of(context).size.height / 2 - 370,
                 left: MediaQuery.of(context).size.width / 2 - 60.5,

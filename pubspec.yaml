@@ -66,6 +66,7 @@ flutter:
     - assets/models/space_model.glb
     - assets/models/water_model.glb
     - assets/models/air_model.glb
+    - assets/models/fire_model.glb
     - assets/images/earth.jpg
     - assets/images/air.jpg
     - assets/images/water.jpg
