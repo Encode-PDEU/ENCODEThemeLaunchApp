@@ -1,4 +1,4 @@
-package com.example.pokeballar
+package com.example.EncodeTHEMElaunch
 
 import io.flutter.embedding.android.FlutterActivity
 

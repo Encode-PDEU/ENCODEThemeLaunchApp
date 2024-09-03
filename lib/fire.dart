@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokeballar/ElementComponents/elements.dart';
+import 'package:EncodeTHEMElaunch/ElementComponents/elements.dart';
 
 class Fire extends StatelessWidget {
   const Fire({super.key});

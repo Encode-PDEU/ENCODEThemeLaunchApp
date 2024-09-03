@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokeballar/ElementComponents/elements.dart';
+import 'package:EncodeTHEMElaunch/ElementComponents/elements.dart';
 
 class Earth extends StatelessWidget {
   const Earth({super.key});

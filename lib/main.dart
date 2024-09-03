@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pokeballar/air.dart';
-import 'package:pokeballar/earth.dart';
-import 'package:pokeballar/ether.dart';
-import 'package:pokeballar/fire.dart';
-import 'package:pokeballar/water.dart';
+import 'package:EncodeTHEMElaunch/air.dart';
+import 'package:EncodeTHEMElaunch/earth.dart';
+import 'package:EncodeTHEMElaunch/ether.dart';
+import 'package:EncodeTHEMElaunch/fire.dart';
+import 'package:EncodeTHEMElaunch/water.dart';
 // import 'package:flutter_ra_availability/flutter_ra_availability.dart';
 // import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'ElementComponents/elements.dart';
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
             ),
             // Elementrix Text
             Positioned(
-              top: MediaQuery.of(context).size.height / 2 - 100,
+              top: MediaQuery.of(context).size.height / 2 - 120,
               left: MediaQuery.of(context).size.width / 2 - 155.5,
               child: const SizedBox(
                 child: Text(
@@ -91,45 +91,69 @@ class MyApp extends StatelessWidget {
             Positioned(
               top: MediaQuery.of(context).size.height / 2 - 10,
               right: MediaQuery.of(context).size.width / 2 - 170.5,
-              child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => const Air()));
-                  },
-                  child: const AirWidget()),
+              child: Builder(
+                builder: (context) {
+                  return InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => const Air()),
+                      );
+                    },
+                    child: const AirWidget(),
+                  );
+                },
+              ),
             ),
             // Ether Element
             Positioned(
               bottom: MediaQuery.of(context).size.height / 2 - 265,
               right: MediaQuery.of(context).size.width / 2 - 65.5,
-              child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => const Ether()));
-                  },
-                  child: EtherWidget()),
+              child: Builder(
+                builder: (context) {
+                  return InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => const Ether()),
+                      );
+                    },
+                    child: const EtherWidget(),
+                  );
+                },
+              ),
             ),
             // Water Element
             Positioned(
               bottom: MediaQuery.of(context).size.height / 2 - 420,
               right: MediaQuery.of(context).size.width / 2 - 170.5,
-              child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => const Water()));
-                  },
-                  child: const WaterWidget()),
+              child: Builder(
+                builder: (context) {
+                  return InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => const Water()),
+                      );
+                    },
+                    child: const WaterWidget(),
+                  );
+                },
+              ),
             ),
             // Fire Element
             Positioned(
               bottom: MediaQuery.of(context).size.height / 2 - 420,
               left: MediaQuery.of(context).size.width / 2 - 170.5,
-              child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => const Fire()));
-                  },
-                  child: FireWidget()),
+              child: Builder(
+                builder: (context) {
+                  return InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => const Fire()),
+                      );
+                    },
+                    child: const FireWidget(),
+                  );
+                },
+              ),
             ),
           ],
         ),
