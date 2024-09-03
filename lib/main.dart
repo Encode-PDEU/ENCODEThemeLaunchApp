@@ -43,8 +43,8 @@ class MyApp extends StatelessWidget {
             ),
             // Elementrix Text
             Positioned(
-              top: MediaQuery.of(context).size.height / 2 - 150,
-              left: MediaQuery.of(context).size.width / 2 - 155.5,
+              top: MediaQuery.of(context).size.height / 2.9 ,
+              left: MediaQuery.of(context).size.width / 15,
               child: const SizedBox(
                 child: Text(
                   'Elementrix',
@@ -72,8 +72,8 @@ class MyApp extends StatelessWidget {
             ),
             // Earth Element (Tap to Navigate)
             Positioned(
-              top: MediaQuery.of(context).size.height / 2 - 0,
-              left: MediaQuery.of(context).size.width / 2 - 170.5,
+              top: MediaQuery.of(context).size.height / 2 ,
+              left: MediaQuery.of(context).size.width / 15,
               child: Builder(
                 builder: (context) {
                   return InkWell(
@@ -89,8 +89,8 @@ class MyApp extends StatelessWidget {
             ),
             // Air Element
             Positioned(
-              top: MediaQuery.of(context).size.height / 2 - 0,
-              right: MediaQuery.of(context).size.width / 2 - 170.5,
+              top: MediaQuery.of(context).size.height / 2 ,
+              right: MediaQuery.of(context).size.width / 15,
               child: Builder(
                 builder: (context) {
                   return InkWell(
@@ -106,8 +106,8 @@ class MyApp extends StatelessWidget {
             ),
             // Ether Element
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 2 - 230,
-              right: MediaQuery.of(context).size.width / 2 - 65.5,
+              bottom: MediaQuery.of(context).size.height / 4.5,
+              right: MediaQuery.of(context).size.width / 2.9,
               child: Builder(
                 builder: (context) {
                   return InkWell(
@@ -123,8 +123,8 @@ class MyApp extends StatelessWidget {
             ),
             // Water Element
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 2 - 350,
-              right: MediaQuery.of(context).size.width / 2 - 170.5,
+              bottom: MediaQuery.of(context).size.height / 14,
+              right: MediaQuery.of(context).size.width / 15,
               child: Builder(
                 builder: (context) {
                   return InkWell(
@@ -140,8 +140,8 @@ class MyApp extends StatelessWidget {
             ),
             // Fire Element
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 2 - 350,
-              left: MediaQuery.of(context).size.width / 2 - 170.5,
+              bottom: MediaQuery.of(context).size.height / 14,
+              left: MediaQuery.of(context).size.width / 15,
               child: Builder(
                 builder: (context) {
                   return InkWell(
