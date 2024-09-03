@@ -62,7 +62,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/models/Pokeball.glb
+    - assets/models/earth_model.glb
+    - assets/models/space_model.glb
+    - assets/models/water_model.glb
+    - assets/models/air_model.glb
     - assets/images/earth.jpg
     - assets/images/air.jpg
     - assets/images/water.jpg

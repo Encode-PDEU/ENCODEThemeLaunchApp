@@ -82,7 +82,7 @@ class MyApp extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => const Earth()),
                       );
                     },
-                    child: const EarthWidget(),
+                    child: EarthWidget(check: false,size: false,),
                   );
                 },
               ),
@@ -99,7 +99,7 @@ class MyApp extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => const Air()),
                       );
                     },
-                    child: const AirWidget(),
+                    child: AirWidget(check: false,size: false,),
                   );
                 },
               ),
@@ -116,7 +116,7 @@ class MyApp extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => const Ether()),
                       );
                     },
-                    child: const EtherWidget(),
+                    child: EtherWidget(check: false, size: false,),
                   );
                 },
               ),
@@ -133,7 +133,7 @@ class MyApp extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => const Water()),
                       );
                     },
-                    child: const WaterWidget(),
+                    child: WaterWidget(check: false, size: false,),
                   );
                 },
               ),
