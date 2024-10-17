@@ -6,6 +6,9 @@ class Fire extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final _size = MediaQuery.of(context).size;
+
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Poppins'),
       debugShowCheckedModeBanner: false,
@@ -26,14 +29,14 @@ class Fire extends StatelessWidget {
                     topRight: Radius.circular(50),
                   ),
                 ),
-                height: 426,
-                width: 430,
+                height: _size.height/1.85,
+                width: _size.width,
               ),
             ),
             // Elementrix Text
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 2 - 100,
-              left: MediaQuery.of(context).size.width / 2 - 155.5,
+              bottom: _size.height / 2.4,
+              left: _size.width / 2.8,
               child: const SizedBox(
                 child: Text(
                   'Fire',
@@ -44,9 +47,18 @@ class Fire extends StatelessWidget {
             ),
             // Overlaying Bottom Container (White)
             Positioned(
-                bottom: MediaQuery.of(context).size.height / 2 - 350,
-                left: MediaQuery.of(context).size.width / 2 - 150,
-                child: FireWidget(check: true, size: true,)),
+                width: _size.width,
+                bottom: _size.height / 8,
+                child: Center(  
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
+                      color: Colors.white,
+                    ),
+                    child: FireWidget(check: true, size: true,)
+                  ),
+                )
+            )
           ],
         ),
       ),

@@ -4,8 +4,6 @@ import 'package:EncodeTHEMElaunch/earth.dart';
 import 'package:EncodeTHEMElaunch/ether.dart';
 import 'package:EncodeTHEMElaunch/fire.dart';
 import 'package:EncodeTHEMElaunch/water.dart';
-// import 'package:flutter_ra_availability/flutter_ra_availability.dart';
-// import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'ElementComponents/elements.dart';
 
 void main() {
@@ -17,6 +15,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final Size _size = MediaQuery.of(context).size;
+
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Poppins'),
       debugShowCheckedModeBanner: false,
@@ -37,8 +38,8 @@ class MyApp extends StatelessWidget {
                     topRight: Radius.circular(50),
                   ),
                 ),
-                height: 568,
-                width: 430,
+                height: _size.height/1.45,
+                width: _size.width,
               ),
             ),
             // Elementrix Text
@@ -59,8 +60,8 @@ class MyApp extends StatelessWidget {
               left: 0,
               right: 0,
               child: Container(
-                height: 481,
-                width: 412,
+                height: _size.height/1.75,
+                width: _size.width,
                 decoration: const BoxDecoration(
                   color: Color.fromRGBO(247, 247, 247, 46),
                   borderRadius: BorderRadius.only(
@@ -72,6 +73,7 @@ class MyApp extends StatelessWidget {
             ),
             // Earth Element (Tap to Navigate)
             Positioned(
+              width: _size.width/3.3,
               top: MediaQuery.of(context).size.height / 2 ,
               left: MediaQuery.of(context).size.width / 15,
               child: Builder(
@@ -89,6 +91,7 @@ class MyApp extends StatelessWidget {
             ),
             // Air Element
             Positioned(
+              width: _size.width/3.3,
               top: MediaQuery.of(context).size.height / 2 ,
               right: MediaQuery.of(context).size.width / 15,
               child: Builder(
@@ -106,7 +109,8 @@ class MyApp extends StatelessWidget {
             ),
             // Ether Element
             Positioned(
-              bottom: MediaQuery.of(context).size.height / 4.5,
+              width: _size.width/3.3,
+              bottom: MediaQuery.of(context).size.height / 4.6,
               right: MediaQuery.of(context).size.width / 2.9,
               child: Builder(
                 builder: (context) {
@@ -123,6 +127,7 @@ class MyApp extends StatelessWidget {
             ),
             // Water Element
             Positioned(
+              width: _size.width/3.3,
               bottom: MediaQuery.of(context).size.height / 14,
               right: MediaQuery.of(context).size.width / 15,
               child: Builder(
@@ -140,6 +145,7 @@ class MyApp extends StatelessWidget {
             ),
             // Fire Element
             Positioned(
+              width: _size.width/3.3,
               bottom: MediaQuery.of(context).size.height / 14,
               left: MediaQuery.of(context).size.width / 15,
               child: Builder(

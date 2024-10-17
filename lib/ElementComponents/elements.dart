@@ -8,7 +8,7 @@ Widget buildModelContainer(String modelpath, bool check, bool size) {
     height: size ? 200 : 112,
     width: size? 300 : 121,
     decoration: BoxDecoration(
-        color: const Color.fromRGBO(208, 218, 223, 100) ,
+        color: const Color.fromRGBO(146, 170, 190, 88).withOpacity(0.25) ,
         borderRadius: BorderRadius.circular(18.0)),
     child: SizedBox(
       height: 78.75,
@@ -36,7 +36,7 @@ Widget buildIconContainer(ImageProvider iconImage) {
     height: 112,
     width: 121,
     decoration: BoxDecoration(
-        color: const Color.fromRGBO(208, 218, 223, 100),
+        color: const Color.fromRGBO(146, 170, 190, 88).withOpacity(0.25),
         borderRadius: BorderRadius.circular(18.0)),
     child: SizedBox(
       height: 78.75,
